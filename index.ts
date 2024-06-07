@@ -1,6 +1,11 @@
 // Wrapping up our Dashboard
-// 1. Create All the other interfaces you think are needed for this board
-// 2. Using the Class, visually show the main Image above the review button.
+// add another property card. The Property should have:
+// 1 x picture of a 'Malaysian Hotel' called 'Malia Hotel'
+// It should cost 35/night
+// It's location should be 'Room 4, Malia , Malaysia, 45334'
+// The contact email should be 'lee34@gmail.com'
+// The phone number for the property should be +60349822083
+// It should not be available
 import { showReviewTotal, populateUser, showDetails, getTopTwoReviews} from './utils'
 import { Price, Country } from './types'
 import { Permissions , LoyaltyUser } from './enums'
@@ -70,7 +75,7 @@ interface Property {
         firstLine: string;
         city: string;
         code: number | string;
-        country: string
+        country: Country
     }
     contact: [ number, string];
     isAvailable: boolean;
@@ -94,7 +99,7 @@ const properties : Property[] = [
     {
         image: 'images/poland-property.jpg',
         title: 'Polish Cottage',
-        price: 34,
+        price: 30,
         location: {
             firstLine: 'no 23',
             city: 'Gdansk',
@@ -107,7 +112,7 @@ const properties : Property[] = [
     {
         image: 'images/london-property.jpg',
         title: 'London Flat',
-        price: 23,
+        price: 25,
         location: {
             firstLine: 'flat 15',
             city: 'London',
@@ -116,6 +121,19 @@ const properties : Property[] = [
         },
         contact: [+34829374892553, 'andyluger@aol.com'],
         isAvailable: true
+    },
+    {
+        image: 'images/malaysian-hotel.jpeg',
+        title: 'Malia Hotel',
+        price: 35,
+        location: {
+            firstLine: 'Room 4',
+            city: 'Malia',
+            code: 45334,
+            country: 'Malaysia'
+        },
+        contact: [ +60349822083, 'lee34@gmail.com'],
+        isAvailable: false
     }
 ]
 
