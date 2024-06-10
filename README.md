@@ -27,7 +27,7 @@ The project was a simple Couch Surfing Website that allowed users to view the av
 - We touched on interfaces and file organisation to abstract some of the code logic
 
 ### Challenges and Reflections
-I can't really say that the project was difficult because we were coding along and not creating anything from scratch. The project's aim was to get our hands dirty with learning TypeScript and it was definetely achieved becease we now have a firm grasp of what type is and what and when we can use it for.
+I can't say that the project was difficult because we were coding along and not creating anything from scratch. The project aimed to get our hands dirty with learning TypeScript and it was achieved because we now have a firm grasp of what type is and when we can use it. The major challenge I faced in this project was compiling my code, I installed node modules and Webpack packages but I needed help to get it to work. The solution to this dilemma was to run  the command `npm run build` to compile the TypeScript into JavaScript and open it using LiveServe instead of running the command `npm run serve `
 
 ## Author 
 Dimpho Molepo
